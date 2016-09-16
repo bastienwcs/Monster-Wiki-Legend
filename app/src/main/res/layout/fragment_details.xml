@@ -1,0 +1,195 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/txtNomMonstre"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:textSize="32dp"
+        android:layout_weight="10" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Evolution :"
+            android:id="@+id/txtLblEgg"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="6dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgEgg"
+            android:layout_below="@+id/txtLblEgg"
+            android:layout_alignStart="@+id/txtLblEgg"
+            android:layout_marginTop="4dp"
+            android:layout_alignLeft="@+id/txtLblEgg"
+            android:layout_marginLeft="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/oeuf_inconnu"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_toLeftOf="@+id/txtLblTypeElem" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Type d&apos;élément :"
+            android:id="@+id/txtLblTypeElem"
+            android:layout_marginLeft="6dp"
+            android:layout_alignTop="@+id/txtLblEgg"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/txtTypeElem"
+            android:layout_alignTop="@+id/imgEgg"
+            android:layout_alignBottom="@+id/imgEgg"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Caractéristiques :"
+            android:id="@+id/txtLblCarac"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="6dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgStatVie"
+            android:layout_below="@+id/txtLblCarac"
+            android:layout_alignStart="@+id/txtLblCarac"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/stat_life"
+            android:layout_marginLeft="30dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgStatPuissance"
+            android:src="@drawable/stat_power"
+            android:layout_below="@+id/imgStatVie"
+            android:layout_alignStart="@+id/imgStatVie"
+            android:layout_marginTop="8dp"
+            android:layout_alignLeft="@+id/imgStatVie" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgStatVitesse"
+            android:src="@drawable/stat_speed"
+            android:layout_below="@+id/imgStatPuissance"
+            android:layout_alignStart="@+id/imgStatPuissance"
+            android:layout_marginTop="8dp"
+            android:layout_alignLeft="@+id/imgStatVie" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgStatEndurance"
+            android:src="@drawable/stat_stamina"
+            android:layout_below="@+id/imgStatVitesse"
+            android:layout_alignStart="@+id/imgStatVitesse"
+            android:layout_marginTop="8dp"
+            android:layout_alignLeft="@+id/imgStatVie" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/txtStatVie"
+            android:layout_alignTop="@+id/imgStatVie"
+            android:layout_alignBottom="@+id/imgStatVie"
+            android:gravity="center_vertical|right"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/txtStatPuissance"
+            android:gravity="center_vertical|right"
+            android:layout_alignBottom="@+id/imgStatPuissance"
+            android:layout_alignTop="@+id/imgStatPuissance"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/txtStatVitesse"
+            android:gravity="center_vertical|right"
+            android:layout_alignBottom="@+id/imgStatVitesse"
+            android:layout_alignTop="@+id/imgStatVitesse"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/txtStatEndurance"
+            android:gravity="center_vertical|right"
+            android:layout_alignBottom="@+id/imgStatEndurance"
+            android:layout_alignTop="@+id/imgStatEndurance"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="bottom"
+        android:layout_weight="20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Evolution :"
+            android:id="@+id/txtLblEvoMonster"
+            android:layout_above="@+id/imgEvoMonster"
+            android:layout_alignParentStart="false"
+            android:layout_alignLeft="@+id/txtLblEgg"
+            android:layout_marginBottom="4dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
